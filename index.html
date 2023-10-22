@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Avenue Fashion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top-container">
+            <span class="header__currency">
+                <label class="header__label" for="selector">Currency : </label>
+                <select class="header__select" id="selector" name="currency">
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="CNY">CNY</option>
+                </select>
+            </span>
+            <span class="header__user">
+                <ul class="header__user-list">
+                    <li>Register</li>
+                    <li>Sign&nbsp;In</li>
+                </ul>
+            </span>
+            <i class="fa fa-user header__user-ico"></i>
+            <div class="header__cart">
+                <i class="fa fa-shopping-cart header__fa-icon"></i>
+                <span class="header__cart-text">empty</span>
+            </div>
+        </div>
+        <div class="header__bottom-container">
+            <nav class="header__navigation">
+                <p class="header__logo">
+                    <span>AVENUE</span> FASHION
+                </p>
+                <ul class="header__nav-list">
+                    <li class="header__nav-list-item">MEN'S</li>
+                    <li class="header__nav-list-item">WOMEN'S</li>
+                    <li class="header__nav-list-item">THE BRAND</li>
+                    <li class="header__nav-list-item header__nav-list-item_current">LOCAL STORES</li>
+                    <li class="header__nav-list-item">LOOK BOOK</li>
+                </ul>
+                <div class="header__search-wrapper">
+                    <input class="header__search" type="text" placeholder="Search...">
+                </div>
+                <i class="fa fa-bars header__mobile-menu" aria-hidden="true"></i>
+            </nav>
+        </div>
+        <div class="header__image-wrapper">
+            <img class="header__image" src="./img/header_image.jpg" alt="Main image">
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__cities cities">
+            <section class="cities__item">
+                <h2 class="cities__title">London</h2>
+                <h3 class="cities__address">180-182 Regent Street, London, W1B 5BT</h3>
+                <p class="cities__text">Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>
+                <button class="cities__button">view details</button>
+            </section>
+            <section class="cities__item">
+                <h2 class="cities__title">New York</h2>
+                <h3 class="cities__address">109 Columbus Circle, New York, NY 10023</h3>
+                <p class="cities__text">Nunc non posuere nisl. Etiam finibus vel dui nec lobor&shy;tis. Aliquam egestas, sem quis condimentum venena&shy;tis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p>
+                <button class="cities__button">view details</button>
+            </section>
+            <section class="cities__item">
+                <h2 class="cities__title">Paris</h2>
+                <h3 class="cities__address">2133 Rue Saint-Honoré, 75001 Paris</h3>
+                <p class="cities__text">Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</p>
+                <button class="cities__button">view details</button>
+            </section>
+        </div>
+        <section class="main__location location">
+            <div class="location__map">
+                <img src="./img/map.jpg" alt="map">
+            </div>
+            <div class="location__about">
+                <h2 class="location__title">London</h2>
+                <h3 class="location__address">180-182 Regent Street, London, W1B 5BT</h3>
+                <p class="location__text">Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>
+                <ul class="location__list">
+                    <li>180-182 Regent Street, London, W1B 5BT</li>
+                    <li>0123-456-789</li>
+                    <li>www.yourwebsite.com</li>
+                    <li>support@yourwebsite.com</li>
+                    <li>Monday-Friday: 9am to 6pm  Saturday:&nbsp;10am&nbsp;to&nbsp;6pm  Sunday:&nbsp;10am&nbsp;to&nbsp;2pm</li>
+                </ul>
+                <div class="location__buttons">
+                    <button><i class="fa fa-facebook"></i></button>
+                    <button><i class="fa fa-twitter"></i></button>
+                    <button><i class="fa fa-instagram"></i></button>
+                    <button><i class="fa fa-pinterest"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
