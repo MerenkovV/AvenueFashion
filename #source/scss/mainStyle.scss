@@ -81,7 +81,9 @@
     }
 }
 .location {
+    position: relative;
     display: flex;
+    background: #9a9a9a;
 
     &__map {
         flex: 1 0 67.7vw;
@@ -92,12 +94,41 @@
             position: relative;
             width: 100%;
         }
+
+        &_opened{
+            height: 300px;
+        }
     }
 
     &__about {
         position: relative;
         padding: 42px 40px 0 40px;
         background-color: #f8f8f8;
+        transition-duration: 300ms;
+        opacity: 1;
+
+        &_invisible{
+            opacity: 0;
+        }
+    }
+
+    &__check {
+        background: rgb(150 150 150 / 63%);;
+        display: none;
+        position: absolute;
+        z-index: 10;
+        border-radius: 50%;
+        padding: 5px 5.5px;
+        top: 10px;
+        right: 10px;
+
+        i{
+            font-size: 20px;
+        }
+    }
+
+    &__check-closed {
+        display: none;
     }
 
     &__title {
@@ -227,6 +258,54 @@
     }
 }
 
+@media(max-width: 1000px){
+    .location{
+        overflow: hidden;
+        &__map{
+            overflow: visible;
+            img{
+                width: 1560px;
+                left: -560px;
+            }
+        }
+        &__about{
+               background: rgba(64, 64, 64, 0.82); 
+        }
+        &__title {
+            color: #ffffff;
+        }
+        &__address {
+            color: #dadada;
+        }
+        &__text {
+            color: #cccccc;
+        }
+        &__list {
+            color: #d3d3d3;
+    
+            li::before{
+                color: #d5d5d5;
+            }
+        }
+        &__buttons {
+            display: flex;
+            position: absolute;
+            bottom: 20px;
+            
+            button{
+                background-color: #848484;
+            }
+        }
+    }
+}
+
+@media(min-width: 800px){
+    .location{
+        &__about_invisible{
+            opacity: 1;
+        }
+    }
+}
 @media(max-width: 800px){
     .cities{
         &__button{
@@ -236,6 +315,14 @@
         }
         &__text{
             display: none;
+        }
+    }
+    .location{
+        &__check {
+            display: block;
+        }
+        &__map{
+            flex: 0 0 0;
         }
     }
 }
@@ -268,7 +355,13 @@
     }
 }
 
-@media(max-width: 500px){
-    .cities{
+@media(max-width: 400px){
+    .location{
+        &__map{
+            img{
+                width: 1700px;
+                left: -672px;
+            }
+        }
     }
 }

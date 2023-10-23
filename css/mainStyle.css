@@ -77,9 +77,11 @@
 }
 
 .location {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #9a9a9a;
 }
 .location__map {
   -webkit-box-flex: 1;
@@ -92,10 +94,35 @@
   position: relative;
   width: 100%;
 }
+.location__map_opened {
+  height: 300px;
+}
 .location__about {
   position: relative;
   padding: 42px 40px 0 40px;
   background-color: #f8f8f8;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  opacity: 1;
+}
+.location__about_invisible {
+  opacity: 0;
+}
+.location__check {
+  background: rgba(150, 150, 150, 0.63);
+  display: none;
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+  padding: 5px 5.5px;
+  top: 10px;
+  right: 10px;
+}
+.location__check i {
+  font-size: 20px;
+}
+.location__check-closed {
+  display: none;
 }
 .location__title {
   font-family: "Montserrat", sans-serif;
@@ -212,6 +239,51 @@
     left: calc(44vw - 913px);
   }
 }
+@media (max-width: 1000px) {
+  .location {
+    overflow: hidden;
+  }
+  .location__map {
+    overflow: visible;
+  }
+  .location__map img {
+    width: 1560px;
+    left: -560px;
+  }
+  .location__about {
+    background: rgba(64, 64, 64, 0.82);
+  }
+  .location__title {
+    color: #ffffff;
+  }
+  .location__address {
+    color: #dadada;
+  }
+  .location__text {
+    color: #cccccc;
+  }
+  .location__list {
+    color: #d3d3d3;
+  }
+  .location__list li::before {
+    color: #d5d5d5;
+  }
+  .location__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+  }
+  .location__buttons button {
+    background-color: #848484;
+  }
+}
+@media (min-width: 800px) {
+  .location__about_invisible {
+    opacity: 1;
+  }
+}
 @media (max-width: 800px) {
   .cities__button {
     width: 172px;
@@ -220,6 +292,14 @@
   }
   .cities__text {
     display: none;
+  }
+  .location__check {
+    display: block;
+  }
+  .location__map {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 0px;
+            flex: 0 0 0;
   }
 }
 @media (max-width: 650px) {
@@ -252,5 +332,11 @@
     height: 51px;
     font-size: 12px;
     justify-self: center;
+  }
+}
+@media (max-width: 400px) {
+  .location__map img {
+    width: 1700px;
+    left: -672px;
   }
 }

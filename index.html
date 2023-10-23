@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Avenue Fashion</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="#source/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="#source/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="#source/ico/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mainStyle.css">
@@ -77,8 +81,12 @@
             </section>
         </div>
         <section class="main__location location">
+            <button class="location__check">
+                <i class="fa fa-eye location__check-open" aria-hidden="true"></i>
+                <i class="fa fa-eye-slash location__check-closed" aria-hidden="true"></i>
+            </button>
             <div class="location__map">
-                <img src="./img/map.jpg" alt="map">
+                <img class="location__map-image" src="./img/map.jpg" alt="map">
             </div>
             <div class="location__about">
                 <h2 class="location__title">London</h2>
@@ -100,5 +108,6 @@
             </div>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
