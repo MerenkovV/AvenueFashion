@@ -53,6 +53,20 @@
         max-width: 230px;
     }
 
+    &__component:last-child {
+        div{
+            ul{
+                li{
+                    cursor: text;
+                }
+                li:hover{
+                    cursor: text;
+                    color: #727272;
+                }
+            }
+        }
+    }
+
     &__component-title {
         font-family: 'Montserrat', sans-serif;
         font-size: 13px;

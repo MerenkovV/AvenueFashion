@@ -480,6 +480,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 59px;
   max-width: 230px;
 }
+.info__component:last-child div ul li {
+  cursor: text;
+}
+.info__component:last-child div ul li:hover {
+  cursor: text;
+  color: #727272;
+}
 .info__component-title {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
@@ -942,6 +949,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 26px;
   font-weight: 400;
   color: #989898;
+  cursor: pointer;
 }
 .header__image-wrapper {
   position: relative;
