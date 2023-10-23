@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .main {
-    height: 1500px;
+    height: auto;
+    position: relative;
+    padding-bottom: 124px;
     width: 100%;
     &__cities {
         padding-top: 61px;
@@ -10,6 +12,7 @@
     }
 }
 .cities {
+    position: relative;
     display: flex;
     justify-content: center;
     padding-left: 25px;
